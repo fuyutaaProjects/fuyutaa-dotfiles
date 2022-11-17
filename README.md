@@ -1,6 +1,7 @@
 # fuyutaa's dotfiles!
 
 These are used in this video on my channel, fuyutaa - hacking et cybersec.
+![rice preview](./PREVIEW-DEMONDICE-RICE-2.png)
 
 ## Description
 
