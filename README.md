@@ -59,13 +59,19 @@ Done! Easy right?
 
 ## Shortcuts (sxhkd)
 
-| First Header           | Second Header           |
-| -----------------------| ------------------------|
-| super + return         | Open st terminal        |
-| super + b              | Open firefox            |
-| super + shift + return | Login page handler      |
-| super + w              | Close window            |
-| super + Tab     | The shell               |
+| First Header             | Second Header               |
+| -------------------------| ----------------------------|
+| super + w                | Close window                |
+| super + shift + return   | Open rofi (app launcher)    |
+| super + return           | Open st terminal            |
+| super + b                | Open firefox                |
+| super + tab              | Switch monocle/tiled mode   |
+| super + t                | Switch to tiled mode        |
+| super + f                | Switch to fullscreen mode   |
+| super + space            | Switch to floating mode     |
+| super + ctrl + {h,j,k,l} | Move a floating window      |
+| super + alt + {h,j,k,l}  | Resize active window        |
+| super + escape           | Reload sxhkd config file    |
 
 
 ## Version History
@@ -80,5 +86,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Credits
 For this project, I mixed dotfiles from different people, customized but also made my own.
 As for the original dotfiles, thanks to:
-* [AlphaTechnolog](https://github.com/AlphaTechnolog/dotfiles)
-* [Ruturajn](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [AlphaTechnolog, sxhkd and other](https://github.com/AlphaTechnolog/dotfiles)
+* [Ruturajn, starship.toml](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* DEMONDICE for the wallpaper. I improved the quality and upscaled the image with AI to make it fit.
