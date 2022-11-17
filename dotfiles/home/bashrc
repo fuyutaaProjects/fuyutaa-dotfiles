@@ -1,0 +1,14 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls="exa --icons"
+alias la="ls -la"
+alias cat="bat --theme=base16 --style=plain --paging=never"
+alias tree="ls --tree"
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export EDITOR=nv
+
+eval "$(starship init bash)"

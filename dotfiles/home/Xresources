@@ -1,0 +1,58 @@
+Xft.antialias:	1
+Xft.hinting:	1
+Xft.autohint:	0
+Xft.hintstyle:	hintslight
+Xft.rgba:	rgb
+Xft.lcdfilter:	lcddefault
+
+! window padding
+st.borderpx: 15
+
+!-- values between 0.1  - 1.0 --! 
+
+st.alpha: 1.0
+
+!-- decay palette --!
+#define decay_darker_bg   #1e2837
+#define decay_bg          #111722
+#define decay_contrast_bg #334856
+#define decay_lighter_bg  #7d9298
+#define decay_fg          #afb9bd
+#define decay_cursor      #b3ccce
+
+#define decay_black         #101012
+#define decay_light_black   #e5e9f0
+#define decay_red           #bf616a
+#define decay_green         #a3be8c
+#define decay_yellow        #ebcb8b
+#define decay_orange        #d08770
+#define decay_darker_blue   #1e293d
+#define decay_contrast_blue #446690
+#define decay_blue          #28529e
+#define decay_aquamarine    #5e81ac
+#define decay_magenta       #754e6e
+#define decay_cyan          #b48ead
+#define decay_white         #e3d5cc
+
+*.foreground:   decay_fg
+*.background:   decay_bg
+*.cursorColor:  decay_cursor
+*fading: 35
+
+*.color0: decay_black
+*.color1: decay_red
+*.color2: decay_green
+*.color3: decay_yellow
+*.color4: decay_blue
+*.color5: decay_magenta
+*.color6: decay_cyan
+*.color7: decay_white
+
+*.color8: decay_light_black
+*.color9: decay_red
+*.color10: decay_green
+*.color11: decay_yellow
+*.color12: decay_blue
+*.color13: decay_magenta
+*.color14: decay_cyan
+*.color15: decay_white
