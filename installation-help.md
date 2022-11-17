@@ -60,3 +60,7 @@ You will need to use the -a attribute to make ti show up, as it's a hidden file.
 ## modify polybar colors
 These parameters are set in the config.ini file, located at:
 >.config/polybar/
+
+## Edit window's borders width
+It's in the borders file, located at:
+>.config/bspwm/scripts/

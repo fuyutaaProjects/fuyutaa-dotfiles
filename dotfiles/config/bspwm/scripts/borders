@@ -22,7 +22,7 @@ get_hex () {
   echo $originalHex | sed 's/0x/#/g'
 }
 
-bspc config border_width 18
+bspc config border_width 8
 bspc config normal_border_color "$(get_hex $outer)"
 bspc config focused_border_color "$(get_hex $outer)"
 
