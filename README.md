@@ -21,6 +21,7 @@ This rice uses the following packages/wm/etc... :
 
 | Package             | Role                    |
 | --------------------|-------------------------|
+| xorg                | Display server          |
 | bspwm               | Window manager          |
 | sxhkd               | Hotkeys daemon          |
 | lightdm             | GUI: Desktop and login  |
@@ -42,11 +43,26 @@ This rice uses the following packages/wm/etc... :
 > You will also need yay to install some of the stuff.
 
 ### Installing
-* Install all the depedencies with pacman
+* Install all the depedencies with pacman except st and picom
 ```shell
-sudo pacman -S bspwm sxhkd lightdm lightdm-gtk-greeter picom feh dunst bat exa rofi starship polybar neovim git
+sudo pacman -S xorg bspwm sxhkd lightdm lightdm-gtk-greeter feh dunst bat exa rofi starship polybar neovim git
 ```
-#### ATTENTION ⚠️: st is not downloadable with pacman. It will come with included in this repository's files.
+
+* Install yay
+```shell
+sudo pacman -S --needed base-devel
+sudo git clone https://aur.archlinux.org/yay.git
+sudo chown -R  USERNAME:USERNAME yay
+cd yay
+makepkg -si
+```
+
+* Install [Arian8j2 picom fork](https://github.com/Arian8j2/picom) with yay
+You must run the following command:
+```shell
+yay picom
+```
+And select the one that has "Arian8j2" in the name.
 
 * Make the .config folder and subfolders
 ```shell
@@ -120,4 +136,5 @@ For this project, I mixed dotfiles from different people, customized, re-edited,
 As for the original dotfiles, thanks to:
 * [AlphaTechnolog, sxhkd and other](https://github.com/AlphaTechnolog/dotfiles)
 * [Ruturajn, starship.toml](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [Arian8j2, picom fork](https://github.com/Arian8j2/picom)
 * DEMONDICE for the wallpaper. I improved the quality and upscaled the image with AI to make it fit.
