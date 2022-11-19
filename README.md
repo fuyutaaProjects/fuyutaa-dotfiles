@@ -19,7 +19,7 @@ Feel free to give me a star on this repo 🙂!
 
 This rice uses the following packages/wm/etc... :
 
-| First Header  | Second Header           |
+| Package       | Role                    |
 | ------------- | ------------------------|
 | bspwm         | Window manager          |
 | sxhkd         | Hotkeys daemon          |
@@ -60,7 +60,7 @@ Done! Easy right?
 
 ## Shortcuts (sxhkd)
 
-| First Header             | Second Header               |
+| Shortcut                 | What it does                |
 | -------------------------| ----------------------------|
 | super + w                | Close window                |
 | super + shift + return   | Open rofi (app launcher)    |
@@ -77,7 +77,7 @@ Done! Easy right?
 
 ## Version History
 
-* 0.1
+* 1.0
     * First version. Polybar needs to be improved.
 
 ## License
@@ -85,7 +85,7 @@ Done! Easy right?
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Credits
-For this project, I mixed dotfiles from different people, customized but also made my own.
+For this project, I mixed dotfiles from different people, customized, re-edited, removed scripts and added mine.
 As for the original dotfiles, thanks to:
 * [AlphaTechnolog, sxhkd and other](https://github.com/AlphaTechnolog/dotfiles)
 * [Ruturajn, starship.toml](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
