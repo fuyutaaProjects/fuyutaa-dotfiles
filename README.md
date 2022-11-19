@@ -19,35 +19,51 @@ Feel free to give me a star on this repo 🙂!
 
 This rice uses the following packages/wm/etc... :
 
-| Package       | Role                    |
-| ------------- | ------------------------|
-| bspwm         | Window manager          |
-| sxhkd         | Hotkeys daemon          |
-| lightdm       | Login page handler      |
-| picom         | Compositor (fork)       |
-| bash          | The shell               |
-| feh           | Background handler      |
-| dunst         | Custom notifications    |
-| bat           | Improved cat            |
-| exa           | Improved ls             |
-| rofi          | App Launcher            |
-| starship      | Custom icons for files  |
-| polybar       | The B A R               |
-| st            | Suckless terminal       |
+| Package             | Role                    |
+| --------------------|-------------------------|
+| bspwm               | Window manager          |
+| sxhkd               | Hotkeys daemon          |
+| lightdm             | GUI: Desktop and login  |
+| lightdm-gtk-greeter | lightdm tool            |
+| st                  | Suckless terminal       |
+| picom               | Compositor (fork)       |
+| bash                | The shell               |
+| feh                 | Background handler      |
+| dunst               | Custom notifications    |
+| bat                 | Improved cat            |
+| exa                 | Improved ls             |
+| rofi                | App Launcher            |
+| starship            | Custom icons for files  |
+| polybar             | The B A R               |
+| neovim              | Text editor             |
+| git                 | Github repo cloner      |
 
 > These packages may need other depedencies that will be installed udring the package installation.
 > You will also need yay to install some of the stuff.
 
 ### Installing
+* Install all the depedencies with pacman
+```shell
+sudo pacman -S bspwm sxhkd lightdm lightdm-gtk-greeter picom feh dunst bat exa rofi starship polybar neovim git
+```
+#### ATTENTION ⚠️: st is not downloadable with pacman. It will come with included in this repository's files.
 
-* Install all the depedencies
+* Make the .config folder and subfolders
+```shell
+mkdir .config
+mkdir .config/bspwm
+mkdir .config/sxhkd
+mkdir .config/polybar
+```
+
+* Clone the repository
 
 * Execute the following commands to set-up dotfiles:
 ```shell
 cp -r ./config/* ~/.config
-cp -r ./bin/* ~/.local/bin
 cp -r ./home/bashrc ~/.bashrc
 cp -r ./home/Xresources ~/.Xresources
+cp -r ./bin/* ~/.local/bin
 ```
 
 * Compile my version of st:

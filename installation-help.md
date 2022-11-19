@@ -12,7 +12,7 @@ archinstall
 
 ## pacman-downloadable packages
 ```shell 
-sudo pacman -S bspwm sxhkd lightdm lightdm-gtk-greeter bash feh dunst bat exa rofi starship polybar
+sudo pacman -S bspwm sxhkd lightdm lightdm-gtk-greeter picom feh dunst bat exa rofi starship polybar neovim git
 ```
 
 ## Installing st (non-pacman)
