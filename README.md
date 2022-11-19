@@ -54,6 +54,8 @@ mkdir .config
 mkdir .config/bspwm
 mkdir .config/sxhkd
 mkdir .config/polybar
+mkdir .local
+mdkir .local/bin
 ```
 
 * Clone the repository
@@ -72,7 +74,20 @@ cd ~/.config/st
 ./rebuild.sh
 ```
 
+* Enable the GUI
+```shell
+systemctl enable lightdm
+```
+
+* Make polybar startup script be executable
+```shell
+chmod +x ~/.config/polybar/launch.sh
+```
+
+* Reboot your system and done!
+
 Done! Easy right?
+You won't have a fancy login page, but doesn't matter as it's just the login page.
 
 ## Shortcuts (sxhkd)
 
