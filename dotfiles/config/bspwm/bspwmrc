@@ -3,9 +3,6 @@
 # Resizing screen
 xrandr -S 1920x1080 &
 
-# Starting eww
-/opt/eww/target/release/./eww open bar &
-
 # autostart
 bash $HOME/.config/bspwm/scripts/autostart.sh
 
