@@ -7,6 +7,7 @@ alias ls="exa --icons"
 alias la="ls -la"
 alias cat="bat --theme=base16 --style=plain --paging=never"
 alias tree="ls --tree"
+alias nv="nvim"
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 export EDITOR=nv
