@@ -42,7 +42,58 @@ This rice uses the following packages/wm/etc... :
 > These packages may need other depedencies that will be installed udring the package installation.
 > You will also need yay to install some of the stuff.
 
-### Installing
+## Pre-install: on a new system
+>The following commands are intented to be executd right after a fresh install of your linux.
+It means, for example, you just installed Arch Linux with archinstall and rebooted, with a minimal profile and no packages already installed.
+
+We need to get a stable desktop before ricing. We'll install the basic packages and unsure everything works properly before ricing. If you directly install the full rice with dotfiles without ever going on desktop, there are great chances your system breaks. This is why we will make a stable state before continuing with the rice.
+
+* Update your sources
+```shell
+sudo pacman -Syy
+```
+
+* Install the basic packages
+See their roles in the table above. Only kitty is not listed, it's just a basic terminal
+```shell
+sudo pacman -S xorg bspwm sxhkd lightdm lightdm-gtk-greeter vim firefox kitty
+```
+
+* Creating .config and adding example config files
+```shell
+mkdir .config
+cd .config
+mkdir bspwm
+mkdir sxhkd
+cp /usr/share/doc/bspwm/example/bspwmrc bspwm/
+cp /usr/share/doc/bspwm/example/sxhkdrc sxhkd/
+```
+* Modifying bspwmrc
+```shell
+vim bspwm/bspwmrc
+```
+For bspwmrc, you must remove everything before "sxhkd &" on the same line. 
+The file should look like that:
+![INSERT NEW IMAGE HERE](./placeholder_s.png)
+
+* Modifying sxhkdrc
+```shell
+vim sxhkd/sxhkdrc
+```
+For sxhkdrc, you must change the program started by "Super + Return" to "kitty". 
+The file should look like that:
+![INSERT NEW IMAGE HERE](./placeholder_s.png)
+
+
+* Create lightdm symlink
+```shell
+systemctl enable lightdm
+```
+
+* Reboot and test things.
+You may now reboot. You should now get a login page, and upon logging, a black screen. If you can open kitty using the Super + Return shortcut, you should be able to continue to the the actual rice!
+
+## Installing
 * Install all the depedencies with pacman except st and picom
 ```shell
 sudo pacman -S xorg bspwm sxhkd lightdm lightdm-gtk-greeter feh dunst bat exa rofi starship polybar neovim git
