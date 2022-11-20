@@ -74,7 +74,7 @@ vim bspwm/bspwmrc
 ```
 For bspwmrc, you must remove everything before "sxhkd &" on the same line. 
 The file should look like that:
-![INSERT NEW IMAGE HERE](./placeholder_s.png)
+![bspwmrc](./bspwmrc_stable.png)
 
 * Modifying sxhkdrc
 ```shell
@@ -82,7 +82,7 @@ vim sxhkd/sxhkdrc
 ```
 For sxhkdrc, you must change the program started by "Super + Return" to "kitty". 
 The file should look like that:
-![INSERT NEW IMAGE HERE](./placeholder_s.png)
+![sxhkdrc](./sxhkdrc_stable.png)
 
 
 * Create lightdm symlink
