@@ -186,6 +186,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 For this project, I mixed dotfiles from different people, customized, re-edited, removed scripts and added mine.
 As for the original dotfiles, thanks to:
 * [AlphaTechnolog, sxhkd and other](https://github.com/AlphaTechnolog/dotfiles)
-* [Ruturajn, starship.toml](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [Ruturajn, starship.toml](https://github.com/Ruturajn/Dotfiles/blob/main/starship.toml)
 * [Arian8j2, picom fork](https://github.com/Arian8j2/picom)
 * DEMONDICE for the wallpaper. I improved the quality and upscaled the image with AI to make it fit.
