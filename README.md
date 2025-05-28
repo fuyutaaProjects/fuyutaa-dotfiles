@@ -65,8 +65,8 @@ mkdir .config
 cd .config
 mkdir bspwm
 mkdir sxhkd
-cp /usr/share/doc/bspwm/example/bspwmrc bspwm/
-cp /usr/share/doc/bspwm/example/sxhkdrc sxhkd/
+cp /usr/share/doc/bspwm/examples/bspwmrc bspwm/
+cp /usr/share/doc/bspwm/examples/sxhkdrc sxhkd/
 ```
 * Modifying bspwmrc
 ```shell
